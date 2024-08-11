@@ -31,6 +31,7 @@
 //  2021-03-04: Initial version.
 
 #include "imgui.h"
+#define IMGUI_DISABLE
 #ifndef IMGUI_DISABLE
 #include "imgui_impl_android.h"
 #include <time.h>
@@ -307,3 +308,4 @@ void ImGui_ImplAndroid_NewFrame()
 //-----------------------------------------------------------------------------
 
 #endif // #ifndef IMGUI_DISABLE
+#undef IMGUI_DISABLE
